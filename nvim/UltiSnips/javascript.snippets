@@ -1,0 +1,65 @@
+snippet rafcp "react function component"
+import React from 'react'
+const $1 = (props) => {
+  return <div>$2</div>;
+};
+export default $1;
+endsnippet
+
+snippet l* "log-double"
+	console.log('[$1]', $1)
+endsnippet
+
+snippet cdispatch "define dispatch"
+	const dispatch = useDispatch()
+endsnippet
+
+snippet improute "import route"
+	import { Redirect, Route, Switch } from 'react-router-dom';
+endsnippet
+
+
+snippet improute "import route"
+  import { Redirect, Route, Switch } from 'react-router-dom'
+endsnippet
+
+snippet cstyles "cstyle-components"
+const $1 = styled.div` `;
+endsnippet
+
+
+snippet impstylecomponent "import styled-components"
+import styled from 'styled-components'
+endsnippet
+
+snippet impsga "import sagas"
+import { takeLatest, call, put } from 'redux-saga/effects';
+endsnippet
+
+
+snippet swreducer "switch-reducers"
+const initialState = [];
+export default (state = initialState, { type, payload }) => {
+  switch (type) {
+    case '$1': {
+    return initialState;
+    }
+    default:
+    return state
+    }
+  }
+endsnippet
+
+
+snippet cfn "const function"
+const $1 = ($2) => {
+	$3
+}
+endsnippet
+
+snippet func "default function"
+function $1() {
+	$2
+}
+endsnippet
+	

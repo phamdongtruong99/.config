@@ -1,28 +1,20 @@
-"NERDTree
-map <C-b> :NERDTreeToggle<CR>
-map <C-i> :NERDTreeFind<CR>
-let g:NERDTreePatternMatchHighlightFullName = 1
-let NERDTreeAutoDeleteBuffer = 1
-let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 2
-let g:NERDDefaultAlign = 'left'
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-let g:NERDTreeChDirMode=2
-let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules']
-let g:NERDTreeShowBookmarks=1
+"Theme
+syntax enable
+colorscheme gruvbox
+let g:airline_theme='gruvbox'
+highlight Normal ctermbg=None
+set termguicolors
 
-" enable line numbers
-let NERDTreeShowLineNumbers=1
-" make sure relative line numbers are used
-autocmd FileType nerdtree setlocal relativenumber
+"FONT
+let g:enable_italic_font = 1
+let g:enable_bold_font = 1
+
+" Easymotion
+let g:EasyMotion_smartcase = 1
 
 
-
-"airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='dracula'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#ale#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
+"control + p
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\v[\/](node_modules|build|public|lib|dist)|(\.(git|svn))$',
+    \ 'file': 'tags\|tags.lock\|tags.temp',
+\ }

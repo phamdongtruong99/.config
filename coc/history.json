@@ -1,0 +1,32 @@
+{
+  "lists": {
+    "%2FUsers%2Ftruong": {
+      "doshi%2F": {
+        "config": [
+          "kjjk",
+          "ex",
+          "e"
+        ]
+      }
+    }
+  },
+  "extensions": {
+    "%2FUsers%2Ftruong": {
+      "doshi%2F": {
+        "config": [
+          "ju",
+          "coc-svg"
+        ]
+      }
+    }
+  },
+  "commands": {
+    "%2FUsers%2Ftruong": {
+      "doshi%2F": {
+        "config%2Fnvim%2Fconfigs": [
+          "renamecurrentFile"
+        ]
+      }
+    }
+  }
+}
