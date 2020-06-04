@@ -6,8 +6,6 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 1
 let g:airline#extensions#tabline#show_tabs = 1
-let g:airline_theme='gruvbox'
-
 
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
@@ -41,3 +39,15 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
+
+
+"{{ Theme
+colorscheme dracula 
+syntax enable
+set background=dark termguicolors cursorline
+let base16colorspace=256
+"opacity background
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+
+"}}

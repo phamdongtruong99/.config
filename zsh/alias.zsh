@@ -2,9 +2,8 @@ alias reload='source ~/.zshrc'
 
 #vim
 
-alias vi="nvim"
-alias cvi="cd .config/nvim/configs"
-alias czsh="cd .config/zsh"
+alias v="nvim"
+alias config="cd .config"
 
 alias scode="cd SCode"
 alias fcode="cd FPT"
@@ -16,7 +15,7 @@ alias glab="open https://gitlab.com"
 alias devdocs='open -a "Google Chrome" https://codesandbox.io/'
 alias ghub="open https://github.com/phamdongtruong99"
 
-# alias node : 
+# alias node :
 alias nv10="nvm use v10"
 alias nv8="nvm use v8"
 alias nps="npm start"

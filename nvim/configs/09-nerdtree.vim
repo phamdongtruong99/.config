@@ -1,9 +1,6 @@
 "NERDTree
-"map <C-b> :NERDTreeToggle<CR>
-"map <C-i> :NERDTreeFind<CR>
-nmap <leader>nr :NERDTree<cr>
-nmap <leader>ne :NERDTreeToggle<cr>
-nmap <leader>nf :NERDTreeFind<cr>
+map <leader>nr :NERDTreeToggle<CR>
+map <C-i> :NERDTreeFind<CR>
 " enable line numbers
 autocmd FileType nerdtree setlocal relativenumber
 " open a NERDTree automatically when vim starts up
@@ -13,8 +10,8 @@ let g:NERDTreePatternMatchHighlightFullName = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 0
-let NERDTreeDirArrowExpandable = "+"
-let NERDTreeDirArrowCollapsible = "-"
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDTreeChDirMode=2
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules']

@@ -1,11 +1,5 @@
 {
-  // Require .prettierrc
   "prettier.requireConfig": true,
-
-  // Tslint on save
-  "tslint.enable": true,
-  "tslint.autoFixOnSave": true,
-  // Run prettier (and others)
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "markdown",
@@ -15,8 +9,9 @@
     "typescript",
     "typescriptreact"
   ],
-
-	"suggest.completionItemKindLabels": {
+		"prettier.singleQuote": true,
+		"prettier.jsxSingleQuote": true,
+	  "suggest.completionItemKindLabels": {
     "keyword": "\uf1de",
     "variable": "\ue79b",
     "value": "\uf89f",

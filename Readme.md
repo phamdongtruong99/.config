@@ -21,3 +21,9 @@ delete surround character
 - visual yss'
 
 ### note : ds, cs, and yss
+
+## Vim multiple
+
+- <C>+ d : sellect
+- <C> + x : next
+- <C> + p: prev

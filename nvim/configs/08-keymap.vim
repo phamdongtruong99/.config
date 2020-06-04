@@ -12,14 +12,9 @@ nmap 'E :qa!<CR>
 nmap 'r :edit!<cr>
 nmap 't :tabclose<cr>
 
-"imap
-inoremap ww <ESC>:w<cr>
-inoremap (; (<CR>)
-inoremap (, (<CR>)<C-c>
-inoremap {; {<CR>}<C-c>
-inoremap {, {<CR>}<C-c>
-inoremap [; [<CR>]<C-c>
-inoremap [, [<CR>]<C-c>
+"toggle referent
+nmap <Leader>,j :ALEGoToDefinitionInSplit<CR>
+nmap <Leader>,l :ALEGoToDefinitionInVSplit<CR>
 "Tagbar-toggle
 nmap <F8> :TagbarToggle<CR>
 
@@ -33,6 +28,9 @@ map <leader>` <ESC>:changes<CR>
 "Recovery commands from history through FZF
 nmap <leader>y :history:<CR>
 
+"imaping 
+noremap <leader>s <ESC>:w<CR>
+noremap <C-u> :source ~/.config/nvim/init.vim <CR>
 inoremap jj <esc>
 tnoremap jj <C-\><C-n>
 

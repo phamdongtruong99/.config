@@ -1,2 +1,3 @@
-nnoremap <silent> <leader>e :call Fzf_dev()<CR>
-
+" fzf
+noremap ` :Files<CR>
+noremap ; :Buffers<CR>

@@ -6,6 +6,12 @@
           "kjjk",
           "ex",
           "e"
+        ],
+        "config%2Fnvim%2Fconfigs": [
+          "eme"
+        ],
+        "config%2Fnvim": [
+          "ex"
         ]
       }
     }

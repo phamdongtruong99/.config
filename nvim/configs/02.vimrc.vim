@@ -1,5 +1,5 @@
 set encoding=UTF-8
-set number
+"set number
 set relativenumber
 " Turn on syntax highlighting.
 syntax on
@@ -8,14 +8,16 @@ set tabstop=2
 set shiftwidth=2
 set history=1000
 
+set guifont=Fira
 set nobackup
 set noswapfile
 set nowrap
 set hidden
 set noerrorbells
 set cursorline
-set mouse=a 
-" enable mouse trong context của neovim 
+set mouse=a
+set noemoji
+" enable mouse trong context của neovim
 
 " ==================================================== Scrolling
 set scrolloff=3         "Start scrolling when we're 3 lines away from margins
@@ -32,7 +34,7 @@ set hlsearch
 set modelines=0
 set nomodeline
 
-let mapleader = "\<Space>" 
+let mapleader = "\<Space>"
 filetype plugin on
 filetype plugin indent on
 
@@ -51,4 +53,13 @@ map <Right> :echo "use key l"<cr>
 map <Up> :echo "use key k"<cr>
 map <Down> :echo "use key j"<cr>
 
-"let g:rainbow_active = 1
+let g:rainbow_active = 1
+
+
+" resize desktop
+
+nnoremap <Left> :vertical resize +3<Cr>
+nnoremap <Right> :vertical resize -3<Cr>
+
+xnoremap K :move '<-1<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
