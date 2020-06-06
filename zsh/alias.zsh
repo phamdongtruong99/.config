@@ -3,7 +3,7 @@ alias reload='source ~/.zshrc'
 #vim
 
 alias v="nvim"
-alias config="cd .config"
+alias vconfig="cd .config"
 
 alias scode="cd SCode"
 alias fcode="cd FPT"

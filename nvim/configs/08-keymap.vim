@@ -1,6 +1,6 @@
 " nmap
 nnoremap <Esc><Esc> :noh<CR>
-nnoremap qq :x <cr>
+nnoremap qq :close <cr>
 
 nmap gl :tabprevious<cr>
 nmap gh :tabnext<cr>
@@ -19,8 +19,8 @@ nmap <Leader>,l :ALEGoToDefinitionInVSplit<CR>
 nmap <F8> :TagbarToggle<CR>
 
 "" Split
-noremap <Leader>h :<C-u>split<CR>
-noremap <Leader>v :<C-u>vsplit<CR>
+noremap <Leader>\ :<C-u>split<CR>
+noremap <Leader>/ :<C-u>vsplit<CR>
 
 "" Show Changes
 map <leader>` <ESC>:changes<CR>

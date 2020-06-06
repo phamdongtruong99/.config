@@ -13,4 +13,7 @@ let g:ctrlp_custom_ignore = {
 \ }
 
 let g:prettier#config#config_precedence = 'file-override'
+"ale
+"
+let g:ale_completion_tsserver_autoimport = 1
 

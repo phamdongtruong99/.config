@@ -1,2 +1,18 @@
 nvim/bundle
 coc/extensions
+configstore
+hub
+
+
+###################
+.DS_Store
+.hg
+.svn
+*.vscode
+node_modules
+###################
+# Temporary files
+*.kate-swp
+*.swp
+*.swo
+*~

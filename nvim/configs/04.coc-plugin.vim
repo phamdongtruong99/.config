@@ -1,6 +1,5 @@
 let g:global_extensions = [
             \'coc-ultisnips',
-            \'coc-tabnine',
             \'coc-phpls',
             \'coc-json',
             \'coc-tsserver',
@@ -33,6 +32,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 
 "coc-vim

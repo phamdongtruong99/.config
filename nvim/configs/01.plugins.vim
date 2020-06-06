@@ -1,22 +1,22 @@
 call plug#begin('~/.config/nvim/bundle')
 	Plug 'scrooloose/nerdtree'
 	Plug 'preservim/nerdcommenter'
+	Plug 'ryanoasis/vim-devicons'
 
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 
 	Plug 'majutsushi/tagbar'
 	Plug 'easymotion/vim-easymotion'
-	Plug 'dracula/vim', { 'as': 'dracula' }
+	Plug 'morhetz/gruvbox'
 
-	Plug 'w0rp/ale'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 
 	Plug 'alvan/vim-closetag'
-	Plug 'kien/ctrlp.vim'
 	Plug 'sirver/ultisnips'
+	Plug 'dense-analysis/ale'
 
 	Plug 'sheerun/vim-polyglot'
 	Plug 'anyakichi/vim-surround'
@@ -28,6 +28,8 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'pangloss/vim-javascript'
 	Plug 'jason0x43/vim-js-indent'
 	Plug 'galooshi/vim-import-js'
-	Plug 'jiangmiao/auto-pairs'
+
+	Plug 'voldikss/vim-floaterm'
+	Plug 'norcalli/nvim-colorizer.lua'
 
 call plug#end()

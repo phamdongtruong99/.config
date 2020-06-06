@@ -8,7 +8,6 @@ set tabstop=2
 set shiftwidth=2
 set history=1000
 
-set guifont=Fira
 set nobackup
 set noswapfile
 set nowrap
@@ -20,7 +19,7 @@ set noemoji
 " enable mouse trong context của neovim
 
 " ==================================================== Scrolling
-set scrolloff=3         "Start scrolling when we're 3 lines away from margins
+set scrolloff=10         "Start scrolling when we're 3 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 set linebreak
@@ -53,13 +52,22 @@ map <Right> :echo "use key l"<cr>
 map <Up> :echo "use key k"<cr>
 map <Down> :echo "use key j"<cr>
 
-let g:rainbow_active = 1
-
+"let g:rainbow_active = 1
 
 " resize desktop
 
 nnoremap <Left> :vertical resize +3<Cr>
 nnoremap <Right> :vertical resize -3<Cr>
+nnoremap <Up> :resize +3<CR>
+nnoremap <Down> :resize -3<CR>
 
-xnoremap K :move '<-1<CR>gv-gv
-xnoremap J :move '>+1<CR>gv-gv
+
+" Keep visual when tab
+xnoremap <  <gv
+xnoremap >  >gv
+
+
+"bind  searching current cursors
+nnoremap K :Ag <C-R><C-W><C-R>
+nnoremap <leader>k /<C-R><C-W><C-R>
+
