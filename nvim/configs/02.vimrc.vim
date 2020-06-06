@@ -1,5 +1,5 @@
 set encoding=UTF-8
-"set number
+set number
 set relativenumber
 " Turn on syntax highlighting.
 syntax on
