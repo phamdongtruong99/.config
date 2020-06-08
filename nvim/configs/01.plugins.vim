@@ -5,11 +5,12 @@ call plug#begin('~/.config/nvim/bundle')
 
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+	Plug 'Xuyuanp/nerdtree-git-plugin'
+	Plug 'morhetz/gruvbox' " or other package manager
+	Plug 'tmux-plugins/vim-tmux'
 
 	Plug 'majutsushi/tagbar'
 	Plug 'easymotion/vim-easymotion'
-	Plug 'morhetz/gruvbox'
-
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
@@ -29,7 +30,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'jason0x43/vim-js-indent'
 	Plug 'galooshi/vim-import-js'
 
-	Plug 'voldikss/vim-floaterm'
 	Plug 'norcalli/nvim-colorizer.lua'
+
 
 call plug#end()

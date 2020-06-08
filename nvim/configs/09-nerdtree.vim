@@ -4,6 +4,10 @@ map <C-i> :NERDTreeFind<CR>
 " enable line numbers
 "autocmd FileType nerdtree setlocal relativenumber
 " open a NERDTree automatically when vim starts up
+" " enable line numbers
+"let NERDTreeShowLineNumbers=1
+" make sure relative line numbers are used
+autocmd FileType nerdtree setlocal relativenumber
 au VimEnter *  NERDTree
 
 let g:NERDTreePatternMatchHighlightFullName = 1

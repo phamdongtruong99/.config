@@ -25,15 +25,14 @@ endif
 
 "{{ Theme
 colorscheme gruvbox 
-syntax enable
-set background=dark termguicolors cursorline
-let base16colorspace=256
-"opacity background
+"syntax enable
+"set background=dark termguicolors cursorline
+"let base16colorspace=256
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 " The lightline.vim theme
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ }
+			\ 'colorscheme': 'gruvbox',
+			\ }
 
-"}}
+""}}

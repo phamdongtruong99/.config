@@ -1,10 +1,11 @@
 window:
+
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 200
+    columns: 190
     lines: 55
 
   dynamic_padding: false
@@ -42,67 +43,16 @@ scrolling:
 
 # Font configuration
 font:
-  # Normal (roman) font face
   normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    # family: SauceCodePro Nerd Font
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    # family: Hack
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
-    family: hack nerd font 
-
-    # The `style` can be specified to pick a specific face.
-    style: Regular
-
-  # Bold font face
+    family: "FuraCode Nerd Font"
+    style: Retina
   bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    # family: SauceCodePro Nerd Font
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    # family: Hack
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofur Nerd Font
-    # family: TerminessTTF Nerd Font
-    family: Hack Nerd Font 
-    # The `style` can be specified to pick a specific face.
-    style: Bold
-
-  # Italic font face
+    family: "FuraCode Nerd Font"
+    style: Regular
   italic:
-    family: Hack Nerd Font 
+    family: "FuraCode Nerd Font"
     style: Italic
-
-  bold_italic:
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    # family: SauceCodePro Nerd Font Mono
-    # family: CodeNewRoman Nerd Font
-    # family: RobotoMono Nerd Font
-    # family: Hack
-    # family: JetBrains Mono
-    # family: UbuntuMono Nerd Font
-    # family: Monofuritalic Nerd Font Mono
-    # family: TerminessTTF Nerd Font
-    family: Hack Nerd Font 
-    # The `style` can be specified to pick a specific face.
-    style: Bold Italic
-
-  # Point size
+ # Point size
   size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
@@ -141,7 +91,7 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    #background: '0x292d3e'
+    background: '#151515'
     foreground: '0xbbc5ff'
 
     # Bright and dim foreground colors
