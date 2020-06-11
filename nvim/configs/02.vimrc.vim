@@ -1,4 +1,6 @@
 set encoding=UTF-8
+
+
 set number
 set relativenumber
 " Turn on syntax highlighting.
@@ -12,6 +14,7 @@ set nobackup
 set noswapfile
 set nowrap
 set hidden
+
 set noerrorbells
 set cursorline
 set mouse=a
@@ -32,8 +35,11 @@ set hlsearch
 " ================ Security ==========================
 set modelines=0
 set nomodeline
+set tags=./tags;/
 
-let mapleader = "\<Space>"
+
+let mapleader = ","
+"let mapleader = ","
 filetype plugin on
 filetype plugin indent on
 
@@ -56,11 +62,12 @@ map <Down> :echo "use key j"<cr>
 
 " resize desktop
 
-nnoremap <Left> :vertical resize +3<Cr>
-nnoremap <Right> :vertical resize -3<Cr>
+nnoremap <Left> :vertical resize +5<Cr>
+nnoremap <Right> :vertical resize -5<Cr>
 nnoremap <Up> :resize +3<CR>
 nnoremap <Down> :resize -3<CR>
-
+nnoremap <leader>m :vertical resize +40<Cr>
+nnoremap <leader>n :vertical resize -40<Cr>
 
 " Keep visual when tab
 xnoremap <  <gv
@@ -70,4 +77,3 @@ xnoremap >  >gv
 "bind  searching current cursors
 nnoremap K :Ag <C-R><C-W><C-R>
 nnoremap <leader>k /<C-R><C-W><C-R>
-

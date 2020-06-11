@@ -1,5 +1,9 @@
 alias reload='source ~/.zshrc'
 
+#tmux 
+
+alias rtmux="tmux source ~/.config/tmux/.tmux.conf"
+
 #vim
 
 alias v="nvim"

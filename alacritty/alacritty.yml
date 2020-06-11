@@ -1,15 +1,43 @@
 window:
-
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 190
-    lines: 55
+    columns: 200
+    lines: 60
 
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  #position:
+  #  x: 0
+  #  y: 0
+
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. Thispadding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  # padding:
+  #   x: 0
+  #   y: 0
+
+  # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
 
+  #Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background, but no title bar buttons
+  #decorations: none
+
+  # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
   #   - Windowed
@@ -21,36 +49,59 @@ window:
   startup_mode: Windowed
 
   # Window title
-  title: none 
+  #title: none
 
-  # Window class (Linux/BSD only):
-  #class:
-    # Application instance name
-    #  instance: Alacritty
-    # General application class
-    #general: Alacritty
-
-  # GTK theme variant (Linux/BSD only)
-  #
-  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
-  # Set this to `None` to use the default theme variant.
-  #gtk_theme_variant: None
+  # Window class (Linux only):
+  #class: none
 
 scrolling:
-  history: 1000
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
   multiplier: 3
+
+  # Faux Scrolling
+  #
+  # The `faux_multiplier` setting controls the number of lines the terminal
+  # should scroll when the alternate screen buffer is active. This is used
+  # to allow mouse scrolling for applications like `man`.
+  #
+  # Specifying `0` will disable faux scrolling.
+  # faux_multiplier: 3
+
+  # Scroll to the bottom when new text is written to the terminal.
+  # auto_scroll: false
+
+# Spaces per Tab (changes require restart)
+#
+# This setting defines the width of a tab in cells.
+#
+# Some applications, like Emacs, rely on knowing about the width of a tab.
+# To prevent unexpected behavior in these applications, it's also required to
+# change the `it` value in terminfo when altering this setting.
   tabspaces: 2
 
-# Font configuration
+# Font configuration (changes require restart)
 font:
+  # The normal (roman) font face to use.
   normal:
     family: "FuraCode Nerd Font"
-    style: Retina
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
   bold:
     family: "FuraCode Nerd Font"
-    style: Regular
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+  # The italic font face
   italic:
     family: "FuraCode Nerd Font"
+    # Style can be specified to pick a specific face.
     style: Italic
  # Point size
   size: 12.0
@@ -58,15 +109,15 @@ font:
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: 1
-    y: 1
+    x: 0
+    y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
-  #glyph_offset:
-  #  x: 0
-  #  y: 0
+  glyph_offset:
+    x: 0
+    y: 0
 
   # Thin stroke font rendering (macOS only)
   #
@@ -84,62 +135,39 @@ font:
   # effect.
   use_thin_strokes: true
 
-# If `true`, bold text is drawn using the bright color variants.
-draw_bold_text_with_bright_colors: true
+  selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
 
-# Colors (Tomorrow Night Bright)
+# Colors (Dracula)
 colors:
   # Default colors
   primary:
-    background: '#151515'
-    foreground: '0xbbc5ff'
-
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
-
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
-  cursor:
-    text: '#4d8ebf'
-    cursor: '#52eb34'
-
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area. If selection
-  # background is unset, selection color will be the inverse of the cell colors.
-  # If only text is unset the cell text color will remain the same.
-  selection:
-    text: '0x292d3e'
-    background: '0x434758'
+    background: '#212126'
+    foreground: '0xf8f8f2'
+    #foreground: '#ff9900'
 
   # Normal colors
   normal:
-    black:   '0x292d3e'
-    red:     '0xf07178'
-    green:   '0xc3e88d'
-    yellow:  '0xffcb6b'
-    blue:    '0x82aaff'
-    magenta: '0xc792ea'
-    cyan:    '0x89ddff'
-    white:   '0xd0d0d0'
+    black:   '0x000000'
+    red:     '0xff5555'
+    green:   '0x50fa7b'
+    yellow:  '0xf1fa8c'
+    #blue:    '0xcaa9fa'
+    blue:    '#ffffff'
+    magenta: '0xff79c6'
+    cyan:    '0x8be9fd'
+    white:   '0xbfbfbf'
 
   # Bright colors
   bright:
-    black:   '0x434758'
-    red:     '0xff8b92'
-    green:   '0xddffa7'
-    yellow:  '0xffe585'
-    blue:    '0x9cc4ff'
-    magenta: '0xe1acff'
-    cyan:    '0xa3f7ff'
-    white:   '0xffffff'
+    black:   '0x282a35'
+    red:     '0xff6e67'
+    green:   '0x5af78e'
+    yellow:  '0xf4f99d'
+    blue:    '0x000000'
+    magenta: '0xff92d0'
+    cyan:    '0x9aedfe'
+    white:   '0xe6e6e6'
 
   # Dim colors
   #
@@ -165,7 +193,7 @@ colors:
   #
   indexed_colors: []
 
-background_opacity: 0.8
+background_opacity: 0.95
 
 key_bindings:
     # (Windows, Linux, and BSD only)
@@ -186,5 +214,3 @@ key_bindings:
   - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
   - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
-
-

@@ -29,7 +29,7 @@ map <leader>` <ESC>:changes<CR>
 nmap <leader>y :history:<CR>
 
 "imaping 
-noremap <leader>s <ESC>:w<CR>
+noremap <C-S> <ESC>:w<CR>
 noremap <C-u> :source ~/.config/nvim/init.vim <CR>
 inoremap jj <esc>
 tnoremap jj <C-\><C-n>
@@ -49,5 +49,10 @@ noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 noremap YY "+y<CR>
 " buffer
 
-noremap <leader>n :bn<CR>
-noremap <leader>b :bn<CR>
+"noremap <leader>n :bn<CR>
+"noremap <leader>b :bn<CR>
+
+
+"undotree
+
+noremap <leader>u :UndotreeShow<CR>
