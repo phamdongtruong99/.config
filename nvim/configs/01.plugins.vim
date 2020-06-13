@@ -8,7 +8,10 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'mbbill/undotree'
 
 	Plug 'morhetz/gruvbox' " or other package manager
-	Plug 'sainnhe/gruvbox-material'
+	Plug 'dracula/vim', { 'as': 'dracula' }
+	
+	"Plug 'ryanoasis/vim-devicons'
+	Plug 'Xuyuanp/nerdtree-git-plugin'
 
 	Plug 'majutsushi/tagbar'
 	Plug 'easymotion/vim-easymotion'

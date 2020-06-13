@@ -1,55 +1,13 @@
 window:
-  # Window dimensions (changes require restart)
-  #
-  # Specified in number of columns/lines, not pixels.
-  # If both are `0`, this setting is ignored.
   dimensions:
-    columns: 200
-    lines: 60
+    columns: 230
+    lines: 80
 
-  # Window position (changes require restart)
-  #
-  # Specified in number of pixels.
-  # If the position is not set, the window manager will handle the placement.
-  #position:
-  #  x: 0
-  #  y: 0
-
-  # Window padding (changes require restart)
-  #
-  # Blank space added around the window in pixels. Thispadding is scaled
-  # by DPI and the specified value is always added at both opposing sides.
-  # padding:
-  #   x: 0
-  #   y: 0
-
-  # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
-
-  #Window decorations
-  #
-  # Values for `decorations`:
-  #     - full: Borders and title bar
-  #     - none: Neither borders nor title bar
-  #
-  # Values for `decorations` (macOS only):
-  #     - transparent: Title bar, transparent background and title bar buttons
-  #     - buttonless: Title bar, transparent background, but no title bar buttons
-  #decorations: none
-
-  # Startup Mode (changes require restart)
-  #
-  # Values for `startup_mode`:
-  #   - Windowed
-  #   - Maximized
-  #   - Fullscreen
-  #
-  # Values for `startup_mode` (macOS only):
-  #   - SimpleFullscreen
   startup_mode: Windowed
 
   # Window title
-  #title: none
+  title:  🇻🇳
 
   # Window class (Linux only):
   #class: none
@@ -61,8 +19,9 @@ scrolling:
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
-  multiplier: 3
-
+  asasmultiplier: 5 
+  
+  decorations: none 
   # Faux Scrolling
   #
   # The `faux_multiplier` setting controls the number of lines the terminal
@@ -88,23 +47,25 @@ scrolling:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: "FuraCode Nerd Font"
+    #family: "FuraCode Nerd Font"
+    family: Inconsolata Nerd Font
+
     # Style can be specified to pick a specific face.
-    style: Regular
+    #style: Regular
 
   # The bold font face
   bold:
     family: "FuraCode Nerd Font"
     # Style can be specified to pick a specific face.
-    style: Bold
+    #style: Bold
 
   # The italic font face
   italic:
     family: "FuraCode Nerd Font"
     # Style can be specified to pick a specific face.
-    style: Italic
+    #style: Italic
  # Point size
-  size: 12.0
+  size: 13.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -192,8 +153,13 @@ colors:
   #   `- { index: 16, color: '0xff00ff' }`
   #
   indexed_colors: []
+  
 
-background_opacity: 0.95
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x000000'
+    cursor: '#3af90e'
+background_opacity: 0.9
 
 key_bindings:
     # (Windows, Linux, and BSD only)

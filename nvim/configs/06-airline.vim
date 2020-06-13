@@ -43,8 +43,8 @@ endif
 
 
 "{{ Theme
-colorscheme gruvbox
-"syntax enable
+colorscheme dracula 
+syntax enable
 "set background=dark termguicolors cursorline
 "let base16colorspace=256
 hi! Normal ctermbg=NONE guibg=NONE

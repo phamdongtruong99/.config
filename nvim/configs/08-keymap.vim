@@ -11,6 +11,8 @@ nmap 'e :q!<CR>
 nmap 'E :qa!<CR>
 nmap 'r :edit!<cr>
 nmap 't :tabclose<cr>
+nmap 'b :b
+"hi Comment cterm=italic
 
 "toggle referent
 nmap <Leader>,j :ALEGoToDefinitionInSplit<CR>

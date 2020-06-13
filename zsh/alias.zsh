@@ -5,7 +5,8 @@ alias reload='source ~/.zshrc'
 alias rtmux="tmux source ~/.config/tmux/.tmux.conf"
 
 #vim
-
+alias m="rtmux"
+alias e="exit"
 alias v="nvim"
 alias vconfig="cd .config"
 
