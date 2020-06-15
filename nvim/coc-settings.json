@@ -10,9 +10,17 @@
     "typescript",
     "typescript.tsx"
   ],
+  "git.addedSign.text": "✚",
+  "git.removedSign.text": "-",
   "suggest.enablePreview": true,
   "prettier.singleQuote": true,
   "suggest.maxCompleteItemCount": 20,
   "typescript.suggest.autoImports": true,
-  "javascript.suggest.autoImports": true
+  "javascript.suggest.autoImports": true,
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact"
+  ]
 }

@@ -11,6 +11,10 @@ endsnippet
 snippet uses "react useState"
   const [$1,$2]=React.useState($3)
 endsnippet
+ 
+snippet zlog "z console"
+	console.log($1)
+endsnippet
     
 snippet usee "react useEffect"
 React.useEffect(()=>{
@@ -43,7 +47,7 @@ React.useCallback(()=>{
 },[$2])
 endsnippet
 
-snippet imm "description"
+snippet imp "description"
 import {$1} from '$2'
 endsnippet
 
@@ -113,4 +117,39 @@ function $1() {
 	$2
 }
 endsnippet
-	
+
+
+# ==========================================
+# React Snippets
+#
+snippet rce "React class exported" b
+import React, { Component } from 'react';
+
+export default class ${1:`!v expand('%:t:r')`} extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = {};
+	}
+
+	render() {
+		return null;$0
+	}
+}
+endsnippet
+
+snippet rcc "React class component" b
+class $1 extends Component {
+	render() {
+		return null;$0
+	}
+}
+endsnippet
+
+snippet rcon "React class constructor" b
+constructor(props) {
+	super(props);
+
+	this.state = ${1:{}};$0
+}
+endsnippet

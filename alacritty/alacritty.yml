@@ -1,13 +1,21 @@
 window:
+  decorations: none
   dimensions:
-    columns: 230
-    lines: 80
+    columns: 190 
+    lines: 40
+  padding: { x: 3, y: 3 }
 
-  dynamic_padding: false
-  startup_mode: Windowed
+#window:
+  #decorations: false 
+  #dimensions:
+    #columns: 230
+    #lines: 80
+
+  #dynamic_padding: false
+  #startup_mode: Windowed
 
   # Window title
-  title:  🇻🇳
+  #title:  🇻🇳
 
   # Window class (Linux only):
   #class: none
@@ -19,9 +27,8 @@ scrolling:
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
-  asasmultiplier: 5 
+  asasmultiplier: 7 
   
-  decorations: none 
   # Faux Scrolling
   #
   # The `faux_multiplier` setting controls the number of lines the terminal
@@ -48,20 +55,20 @@ font:
   # The normal (roman) font face to use.
   normal:
     #family: "FuraCode Nerd Font"
-    family: Inconsolata Nerd Font
+    family: Hack Nerd Font
 
     # Style can be specified to pick a specific face.
     #style: Regular
 
   # The bold font face
   bold:
-    family: "FuraCode Nerd Font"
+    family: Hack Nerd Font
     # Style can be specified to pick a specific face.
     #style: Bold
 
   # The italic font face
   italic:
-    family: "FuraCode Nerd Font"
+    family: Hack Nerd Font
     # Style can be specified to pick a specific face.
     #style: Italic
  # Point size
@@ -160,6 +167,10 @@ colors:
     text: '0x000000'
     cursor: '#3af90e'
 background_opacity: 0.9
+
+visual_bell:
+  animation: EaseOutExpo
+  duration: 0
 
 key_bindings:
     # (Windows, Linux, and BSD only)

@@ -1,6 +1,5 @@
 set encoding=UTF-8
 
-
 set number
 set relativenumber
 " Turn on syntax highlighting.
@@ -20,6 +19,10 @@ set cursorline
 set mouse=a
 set noemoji
 " enable mouse trong context của neovim
+
+set formatprg=prettier
+autocmd FileType javascript.jsx setlocal commentstring={/*\ %s\ */}
+
 
 " ==================================================== Scrolling
 set scrolloff=10         "Start scrolling when we're 3 lines away from margins

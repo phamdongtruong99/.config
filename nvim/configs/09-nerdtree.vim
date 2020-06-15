@@ -1,7 +1,7 @@
 "NERDTree
 map <space>n :NERDTreeToggle<CR>
 map <C-i> :NERDTreeFind<CR>
-autocmd FileType nerdtree setlocal relativenumber
+"autocmd FileType nerdtree setlocal relativenumber
 au VimEnter *  NERDTree
 
 let g:NERDTreePatternMatchHighlightFullName = 1

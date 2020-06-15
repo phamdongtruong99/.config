@@ -10,8 +10,9 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'morhetz/gruvbox' " or other package manager
 	Plug 'dracula/vim', { 'as': 'dracula' }
 	
-	"Plug 'ryanoasis/vim-devicons'
+	Plug 'ryanoasis/vim-devicons'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
+	"Plug 'airblade/vim-gitgutter'
 
 	Plug 'majutsushi/tagbar'
 	Plug 'easymotion/vim-easymotion'
