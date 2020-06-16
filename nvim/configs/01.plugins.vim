@@ -9,8 +9,9 @@ call plug#begin('~/.config/nvim/bundle')
 
 	Plug 'morhetz/gruvbox' " or other package manager
 	Plug 'dracula/vim', { 'as': 'dracula' }
-	
-	Plug 'ryanoasis/vim-devicons'
+   "Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+
+	"Plug 'ryanoasis/vim-devicons'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	"Plug 'airblade/vim-gitgutter'
 
@@ -29,9 +30,9 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'anyakichi/vim-surround'
 	Plug 'terryma/vim-multiple-cursors'
 
-	Plug 'pangloss/vim-javascript'
-	Plug 'jason0x43/vim-js-indent'
-	Plug 'galooshi/vim-import-js'
+	"Plug 'pangloss/vim-javascript'
+	"Plug 'jason0x43/vim-js-indent'
+	"Plug 'galooshi/vim-import-js'
 
 	Plug 'norcalli/nvim-colorizer.lua'
 	Plug 'Yggdroot/indentLine'

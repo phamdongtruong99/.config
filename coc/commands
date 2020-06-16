@@ -1,2 +1,4 @@
 prettier.formatFile
+eslint.executeAutofix
+eslint.createConfig
 workspace.renameCurrentFile

@@ -15,17 +15,28 @@ let g:NERDTreeChDirMode=2
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules']
 
 let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ 'Ignored'   : '☒',
-    \ "Unknown"   : "?"
-    \ }
+	\     'Modified'  : '•',
+	\     'Staged'    : '✚',
+	\     'Untracked' : 'ᵁ',
+	\     'Renamed'   : '≫',
+	\     'Unmerged'  : '≠',
+	\     'Ignored'   : 'ⁱ',
+	\     'Deleted'   : '✖',
+	\     'Unknown'   : '⁇'
+   \ }
+"let g:NERDTreeIndicatorMapCustom = {
+    "\ "Modified"  : "✹",
+    "\ "Staged"    : "✚",
+    "\ "Untracked" : "✭",
+    "\ "Renamed"   : "➜",
+    "\ "Unmerged"  : "═",
+    "\ "Deleted"   : "✖",
+    "\ "Dirty"     : "✗",
+    "\ "Clean"     : "✔︎",
+    "\ 'Ignored'   : '☒',
+    "\ "Unknown"   : "?"
+    "\ }
+
 
 let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
 let g:NERDTreeHighlightFoldersFullName = 1

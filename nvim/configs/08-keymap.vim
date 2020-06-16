@@ -18,7 +18,7 @@ nmap 'b :b
 nmap <Leader>,j :ALEGoToDefinitionInSplit<CR>
 nmap <Leader>,l :ALEGoToDefinitionInVSplit<CR>
 "Tagbar-toggle
-nmap <F8> :TagbarToggle<CR>
+nmap <leader><F8> :TagbarToggle<CR>
 
 "" Split
 noremap <Leader>\ :<C-u>split<CR>

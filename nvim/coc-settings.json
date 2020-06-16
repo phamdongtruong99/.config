@@ -1,5 +1,6 @@
 {
   "suggest.noselect": false,
+  "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
   "coc.preferences.formatOnSaveFiletypes": [
     "typescriptreact",
     "html",
@@ -22,5 +23,6 @@
     "typescript",
     "typescriptreact",
     "javascriptreact"
-  ]
+  ],
+  "eslint.autoFixOnSave": true
 }

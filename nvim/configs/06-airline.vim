@@ -45,7 +45,7 @@ endif
 "{{ Theme
 colorscheme dracula 
 syntax enable
-"set background=dark termguicolors cursorline
+set background=dark termguicolors cursorline
 "let base16colorspace=256
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE

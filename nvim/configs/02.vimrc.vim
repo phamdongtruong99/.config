@@ -67,15 +67,18 @@ map <Down> :echo "use key j"<cr>
 
 nnoremap <Left> :vertical resize +5<Cr>
 nnoremap <Right> :vertical resize -5<Cr>
-nnoremap <Up> :resize +3<CR>
-nnoremap <Down> :resize -3<CR>
-nnoremap <leader>m :vertical resize +40<Cr>
-nnoremap <leader>n :vertical resize -40<Cr>
+"nnoremap <Up> :resize +3<CR>
+"nnoremap <Down> :resize -3<CR>
+"nnoremap <leader>m :vertical resize +40<Cr>
+"nnoremap <leader>n :vertical resize -40<Cr>
 
 " Keep visual when tab
 xnoremap <  <gv
 xnoremap >  >gv
 
+" Instead of 1 line, move 3 at a time
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
 
 "bind  searching current cursors
 nnoremap K :Ag <C-R><C-W><C-R>

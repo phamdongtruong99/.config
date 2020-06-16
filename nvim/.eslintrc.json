@@ -1,11 +1,6 @@
 {
-  "plugins": [
-    "react"
-  ],
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
+  "plugins": ["react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "rules": {
     "indent": [2, 2, { "SwitchCase": 1 }],
     "linebreak-style": [2, "unix"],
@@ -22,7 +17,7 @@
     "ecmaVersion": 6,
     "sourceType": "module",
     "ecmaFeatures": {
-        "jsx": true
+      "jsx": true
     }
   },
   "env": {
@@ -33,3 +28,4 @@
     "arguments": true
   }
 }
+
