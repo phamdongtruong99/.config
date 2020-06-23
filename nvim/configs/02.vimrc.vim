@@ -83,3 +83,4 @@ nnoremap <C-y> 3<C-y>
 "bind  searching current cursors
 nnoremap K :Ag <C-R><C-W><C-R>
 nnoremap <leader>k /<C-R><C-W><C-R>
+

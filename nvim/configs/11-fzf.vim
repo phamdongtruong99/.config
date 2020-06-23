@@ -1,6 +1,6 @@
 " fzf
 noremap ` :Files<CR>
-noremap ~ :GFiles<CR>
+noremap <C-p> :GFiles<CR>
 noremap ; :Buffers<CR>
 
 
