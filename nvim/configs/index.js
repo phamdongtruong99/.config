@@ -1,8 +1,12 @@
 const a = () => {
-  console.log("acb");
+  console.log('acb');
 };
 
 const obj = {
-  a: "abc",
+  a: 'abc',
   age: 20,
 };
+
+function baa() {
+  console.log('acbd efg hifkfkdsf! ');
+}

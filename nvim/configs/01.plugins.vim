@@ -23,8 +23,11 @@ call plug#begin('~/.config/nvim/bundle')
 
 	Plug 'Yggdroot/indentLine'
 
+	"markdown"
 	Plug 'dhruvasagar/vim-table-mode'
 
+	"folding"
+	Plug 'tmhedberg/SimpylFold'
 	" Commenting
   Plug 'tpope/vim-commentary'
 
@@ -41,3 +44,9 @@ call plug#end()
 
 	" Commenting
 autocmd FileType apache setlocal commentstring=#\ %s
+
+"folding
+"
+
+let g:SimpylFold_docstring_preview = 1
+
