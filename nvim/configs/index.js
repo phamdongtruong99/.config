@@ -9,4 +9,5 @@ const obj = {
 
 function baa() {
   console.log('acbd efg hifkfkdsf! ');
+  console.log('%cabc', 'font-weight:bold;color:green;');
 }

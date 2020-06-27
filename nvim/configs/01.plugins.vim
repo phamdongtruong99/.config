@@ -17,6 +17,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'sirver/ultisnips'
 
 	Plug 'dense-analysis/ale'
+	Plug 'w0rp/ale'
 
 	Plug 'anyakichi/vim-surround'
 	Plug 'terryma/vim-multiple-cursors'
@@ -26,27 +27,55 @@ call plug#begin('~/.config/nvim/bundle')
 	"markdown"
 	Plug 'dhruvasagar/vim-table-mode'
 
-	"folding"
-	Plug 'tmhedberg/SimpylFold'
 	" Commenting
   Plug 'tpope/vim-commentary'
 
 	Plug 'norcalli/nvim-colorizer.lua'
 
 	Plug 'tpope/vim-fugitive'
-
 " react js
 
 	Plug 'maxmellon/vim-jsx-pretty'
+	" Plug 'mattn/emmet-vim'
 
+	"import "
+	" Plug 'billyvg/node-host', { 'do': 'npm install' }
+	" Plug 'billyvg/jsimport.nvim'
 call plug#end()
 
 
 	" Commenting
 autocmd FileType apache setlocal commentstring=#\ %s
 
-"folding
+" indentLine
 "
 
-let g:SimpylFold_docstring_preview = 1
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
+let g:indentLine_color_term = 239
+
+
+"auto import 
+"
+" let g:jsimport#reporting = 1
+
+"end import
+"ale synxtax 
+"
+let g:ale_sign_error = '●' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+"
+"
+"end ale
+"
+"
+"""emmet vim
+
+"let g:user_emmet_leader_key='<Tab>'
+"let g:user_emmet_settings = {
+"  \  'javascript.jsx' : {
+"    \      'extends' : 'jsx',
+"    \  },
+"  \}
+"""end emmet vim

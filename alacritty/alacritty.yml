@@ -1,8 +1,8 @@
 window:
   #decorations: none
-  dimensions:
-    columns: 200 
-    lines: 55
+  # dimensions:
+  #   columns: 200 
+  #   lines: 55
   padding: { x: 3, y: 3 }
 
 #window:
@@ -12,7 +12,8 @@ window:
     #lines: 80
 
   #dynamic_padding: false
-  startup_mode: Windowed
+  # startup_mode: Windowed
+  startup_mode: SimpleFullscreen 
 
   # Window title
   #title:  🇻🇳

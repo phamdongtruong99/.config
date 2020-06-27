@@ -82,3 +82,7 @@ alias Rcode="cd Reference-code"
 alias cityCode="cd Nestsera"
 
 alias myphp="../../Library/WebServer/Documents"
+
+
+
+alias m30="tmux splitw -h -p 25"
