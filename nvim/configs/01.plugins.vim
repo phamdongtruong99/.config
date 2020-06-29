@@ -4,6 +4,7 @@ call plug#begin('~/.config/nvim/bundle')
 	" " Airline
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
+	" Plug 'ayu-theme/ayu-vim' " or other package manager
 
 	Plug 'dracula/vim', { 'as': 'dracula' }
 
