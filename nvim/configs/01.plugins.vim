@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/bundle')
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
+
 	" " Airline
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
@@ -37,11 +38,6 @@ call plug#begin('~/.config/nvim/bundle')
 " react js
 
 	Plug 'maxmellon/vim-jsx-pretty'
-	" Plug 'mattn/emmet-vim'
-
-	"import "
-	" Plug 'billyvg/node-host', { 'do': 'npm install' }
-	" Plug 'billyvg/jsimport.nvim'
 call plug#end()
 
 
