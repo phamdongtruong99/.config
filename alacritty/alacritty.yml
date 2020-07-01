@@ -6,14 +6,14 @@ window:
   padding: { x: 3, y: 3 }
 
 #window:
-  #decorations: false 
-  #dimensions:
-    #columns: 230
-    #lines: 80
+  # decorations: false 
+  dimensions:
+    columns: 230
+    lines: 80
 
   #dynamic_padding: false
-  # startup_mode: Windowed
-  startup_mode: SimpleFullscreen 
+  startup_mode: Windowed
+  # startup_mode: SimpleFullscreen 
 
   # Window title
   #title:  🇻🇳
