@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/bundle')
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
-
+	" Plug 'ryanoasis/vim-devicons'
 	" " Airline
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
@@ -9,7 +9,6 @@ call plug#begin('~/.config/nvim/bundle')
 
 	Plug 'dracula/vim', { 'as': 'dracula' }
 
-	Plug 'majutsushi/tagbar'
 	Plug 'easymotion/vim-easymotion'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -18,8 +17,8 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'alvan/vim-closetag'
 	Plug 'sirver/ultisnips'
 
-	Plug 'dense-analysis/ale'
-	Plug 'w0rp/ale'
+ 	Plug 'dense-analysis/ale'
+" 	Plug 'w0rp/ale'
 
 	Plug 'anyakichi/vim-surround'
 	Plug 'terryma/vim-multiple-cursors'

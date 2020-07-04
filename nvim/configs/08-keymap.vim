@@ -15,10 +15,10 @@ nmap 'b :b
 "hi Comment cterm=italic
 
 "toggle referent
-nmap <Leader>,j :ALEGoToDefinitionInSplit<CR>
-nmap <Leader>,l :ALEGoToDefinitionInVSplit<CR>
+" nmap <Leader>,j :ALEGoToDefinitionInSplit<CR>
+" nmap <Leader>,l :ALEGoToDefinitionInVSplit<CR>
 "Tagbar-toggle
-nmap <leader><F8> :TagbarToggle<CR>
+" nmap <leader><F8> :TagbarToggle<CR>
 
 "" Split
 noremap <Leader>\ :<C-u>split<CR>
@@ -45,6 +45,7 @@ endif
 "Auto close Tag
 inoremap ><Tab> ><Esc>?<[a-z]<CR>lyiwo</<C-r>"><Esc>O
 
+" select current file and create file on current path
 noremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " copy line and space line below
@@ -54,8 +55,27 @@ noremap YY "+y<CR>
 "noremap <leader>n :bn<CR>
 "noremap <leader>b :bn<CR>
 
+" prev and next buffer
+"\\ Switch between files
+nnoremap <S-tab>b :bp<CR> " Previous buffer file
+nnoremap <S-tab>n :bn<CR> " Next buffer file
+nnoremap <Leader><Leader>c <c-^> " The last two files
 
-"undotree
 
-noremap <leader>u :UndotreeShow<CR>
+"\\ Force save file when I forgot run 'sudo vim file'
+"\\ With Great Power Comes Great Responsibility
+cmap w!! %!sudo tee > /dev/null %
 
+
+"functional
+" Rename current file
+function! RenameFile()
+  let old_name = expand('%')
+  let new_name = input('New file name: ', expand('%'), 'file')
+  if new_name != '' && new_name != old_name
+    exec ':saveas ' . new_name
+    exec ':silent !rm ' . old_name
+    redraw!
+  endif
+endfunction
+map <Leader>rnf :call RenameFile()<cr>
