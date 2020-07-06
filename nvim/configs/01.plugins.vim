@@ -8,6 +8,7 @@ call plug#begin('~/.config/nvim/bundle')
 	" Plug 'ayu-theme/ayu-vim' " or other package manager
 
 	Plug 'dracula/vim', { 'as': 'dracula' }
+	Plug 'morhetz/gruvbox'
 
 	Plug 'easymotion/vim-easymotion'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
