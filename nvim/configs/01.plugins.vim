@@ -35,11 +35,9 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'norcalli/nvim-colorizer.lua'
 
 	Plug 'tpope/vim-fugitive'
-" react js
-
+	" react js
 	Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
-
 
 	" Commenting
 autocmd FileType apache setlocal commentstring=#\ %s
