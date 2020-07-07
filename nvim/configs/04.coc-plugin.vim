@@ -31,6 +31,9 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 " show commit contains current position
 nmap gC <Plug>(coc-git-commit)

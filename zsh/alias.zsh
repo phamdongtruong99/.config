@@ -3,7 +3,7 @@ alias reload='source ~/.zshrc'
 #tmux 
 
 alias rtmux="tmux source ~/.config/tmux/.tmux.conf"
-
+#
 #vim
 alias m="rtmux"
 alias e="exit"
@@ -74,6 +74,7 @@ alias rf5="mono Program.exe"
 
 #alias goto
 
+alias ssql="sudo /usr/local/mysql/support-files/mysql.server start"
 alias rsql="sudo /usr/local/mysql/support-files/mysql.server restart"
 
 alias passwifi="wifi-password"

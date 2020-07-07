@@ -42,7 +42,6 @@ set tags=./tags;/
 
 
 let mapleader = ","
-"let mapleader = ","
 filetype plugin on
 filetype plugin indent on
 

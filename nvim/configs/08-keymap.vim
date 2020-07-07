@@ -13,13 +13,6 @@ nmap 'r :edit!<cr>
 nmap 't :tabclose<cr>
 nmap 'b :b
 "hi Comment cterm=italic
-
-"toggle referent
-" nmap <Leader>,j :ALEGoToDefinitionInSplit<CR>
-" nmap <Leader>,l :ALEGoToDefinitionInVSplit<CR>
-"Tagbar-toggle
-" nmap <leader><F8> :TagbarToggle<CR>
-
 "" Split
 noremap <Leader>\ :<C-u>split<CR>
 noremap <Leader>/ :<C-u>vsplit<CR>

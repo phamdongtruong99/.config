@@ -143,6 +143,7 @@ colors:
     #text: '0x000000'
     text: '#191919'
     cursor: '#3af90e'
+    # cursor: '#9509f9'
 background_opacity: 1
 
 visual_bell:
