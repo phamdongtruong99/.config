@@ -12,7 +12,10 @@ let NERDTreeDirArrows = 0
 " let g:NERDTreeDirArrowExpandable = '▸'
 " let g:NERDTreeDirArrowCollapsible = '▾'
 
-let g:NERDTreeWinSize=35
+let NERDTreeShowLineNumbers=1
+" let NERDTreeShowHidden=1
+let NERDTreeMinimalUI = 1
+let g:NERDTreeWinSize=38
 
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDTreeChDirMode=2

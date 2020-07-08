@@ -20,7 +20,6 @@ let g:airline#extensions#hunks#enabled = 1
 let g:airline#extensions#hunks#non_zero_only = 1
 
 let g:airline#extensions#whitespace#enabled = 0
-set guifont=Liberation\ Mono\ for\ Powerline\ 10
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}

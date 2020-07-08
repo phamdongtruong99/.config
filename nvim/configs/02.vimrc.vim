@@ -1,7 +1,6 @@
 set encoding=UTF-8
 
-set number
-set relativenumber
+set number relativenumber
 " Turn on syntax highlighting.
 syntax on
 
