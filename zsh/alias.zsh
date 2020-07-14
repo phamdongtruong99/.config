@@ -84,6 +84,8 @@ alias cityCode="cd Nestsera"
 
 alias myphp="../../Library/WebServer/Documents"
 
+alias cphp="nvim /etc/apache2/httpd.conf"
+alias htdoc="cd /Applications/MAMP/htdocs"
 
 
 alias m30="tmux splitw -h -p 25"

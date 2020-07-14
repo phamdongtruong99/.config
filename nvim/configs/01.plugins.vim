@@ -6,7 +6,6 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'vim-airline/vim-airline-themes'
 
 	Plug 'dracula/vim', { 'as': 'dracula' }
-	Plug 'morhetz/gruvbox'
 
 	Plug 'easymotion/vim-easymotion'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -34,6 +33,9 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'tpope/vim-fugitive'
 	" react js
 	Plug 'maxmellon/vim-jsx-pretty'
+
+	"float"
+	Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 	" Commenting
