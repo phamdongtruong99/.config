@@ -1,20 +1,11 @@
 {
   "suggest.noselect": false,
   "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
-  "coc.preferences.formatOnSaveFiletypes": [
-    "typescriptreact",
-    "html",
-    "json",
-    "css",
-    "scss",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescript.tsx"
-  ],
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
   "git.addedSign.text": "✚",
   "git.removedSign.text": "-",
   "suggest.enablePreview": true,
+  "suggest.timeout": 500,
   "prettier.singleQuote": true,
   "suggest.maxCompleteItemCount": 20,
   "typescript.suggest.autoImports": true,
@@ -25,5 +16,35 @@
     "typescriptreact",
     "javascriptreact"
   ],
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "explorer.width": 40,
+  "explorer.file.column.filename.width": 20,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.sources": [
+    {
+      "name": "file",
+      "expand": true
+    }
+  ],
+  "explorer.file.columns": [
+    "indent",
+    "selection",
+    "icon",
+    "filename",
+    "size",
+    "readonly"
+  ],
+  "explorer.keyMappings": {
+    "<tab>": "toggleSelection"
+  },
+  "explorer.icon.expanded": " ",
+  "explorer.icon.collapsed": " ",
+  "explorer.icon.selected": "",
+  "explorer.file.column.git.icon.unmodified": "  ",
+  "explorer.file.column.git.icon.mixed": "* ",
+  "explorer.file.column.git.icon.modified": " ",
+  "explorer.file.column.git.icon.untracked": " ",
+  "explorer.file.column.git.icon.deleted": " ",
+  "explorer.file.column.git.icon.added": " "
 }

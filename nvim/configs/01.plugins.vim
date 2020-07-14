@@ -6,6 +6,10 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 
+
+	"float"
+	Plug 'voldikss/vim-floaterm'	
+
 	Plug 'dracula/vim', { 'as': 'dracula' }
 
 	Plug 'easymotion/vim-easymotion'

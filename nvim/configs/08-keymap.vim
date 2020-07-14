@@ -5,6 +5,7 @@ nnoremap qq :close <cr>
 nmap gl :tabprevious<cr>
 nmap gh :tabnext<cr>
 
+nmap <leader>w :w !sudo tee %<CR>
 nmap 'w :wa!<CR>
 nmap 'q :wq<CR>
 nmap 'e :q!<CR>
