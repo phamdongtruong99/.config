@@ -16,10 +16,10 @@ echo "mkdir -p ${HOME}/code"
 mkdir -p "${HOME}/code"
 
 
-echo "install homeBrew 🕷"
+echo " 🏹 install homeBrew 🕷"
 
 # install homebrew https://brew.sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "brew installing stuff"
 
@@ -29,6 +29,24 @@ curl -L https://git.io/n-install | bash
 
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
+
+echo "install zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+echo "zsh installed"
+
+
+echo "Fira Code font!"
+
+brew tap homebrew/cask-fonts
+brew cask install font-fira-code
+
+echo "install fira code success!"
+
+echo "install alacritty"
+brew cask install alacritty
+echo "success"
+
 
 echo "installing a few global npm packages"
 npm install --global serve fkill-cli npm-quick-run \
