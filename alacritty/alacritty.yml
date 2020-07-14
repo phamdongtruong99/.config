@@ -122,7 +122,7 @@ font:
 
     # The `style` can be specified to pick a specific face.
     # style: Regular
-    style: Regular 
+    style: Regular
 
   # Bold font face
   # bold:
@@ -157,7 +157,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    family: Mononoki Nerd Font
+    family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -176,7 +176,8 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofuritalic Nerd Font Mono
     # family: TerminessTTF Nerd Font
-    family: Mononoki Nerd Font
+    # family: Mononoki Nerd Font
+    family: Fira Code
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
@@ -322,8 +323,8 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-# background_opacity: 1.0
-background_opacity: 0.95
+background_opacity: 1.0
+# background_opacity: 0.95
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
@@ -582,4 +583,3 @@ key_bindings:
   - { key: PageDown, mods: Shift, action: ScrollPageDown, mode: ~Alt }
   - { key: Home, mods: Shift, action: ScrollToTop, mode: ~Alt }
   - { key: End, mods: Shift, action: ScrollToBottom, mode: ~Alt }
-

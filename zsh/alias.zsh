@@ -1,5 +1,7 @@
 alias reload='source ~/.zshrc'
 
+alias today='date +"%A, %B %-d, %Y"'
+
 #tmux 
 
 alias rtmux="tmux source ~/.config/tmux/.tmux.conf"

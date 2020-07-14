@@ -41,7 +41,6 @@ endif
   let g:airline_symbols.paste = '∥'
   let g:airline_symbols.whitespace = 'Ξ'
 
-"{{ Theme
 colorscheme dracula 
 syntax enable
 " set background=dark termguicolors cursorline
@@ -53,4 +52,3 @@ let g:lightline = {
 			\ 'colorscheme': 'dracula',
 			\ }
 
-""}}

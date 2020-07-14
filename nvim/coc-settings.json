@@ -1,17 +1,6 @@
 {
   "suggest.noselect": false,
-  "pairs.enableCharacters": ["(", "[", "{", "'", "\"", "`"],
-  "coc.preferences.formatOnSaveFiletypes": [
-    "typescriptreact",
-    "html",
-    "json",
-    "css",
-    "scss",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescript.tsx"
-  ],
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
   "git.addedSign.text": "✚",
   "git.removedSign.text": "-",
   "suggest.enablePreview": true,
