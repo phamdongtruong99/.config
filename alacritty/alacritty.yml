@@ -38,10 +38,10 @@ font:
   normal:
   #  #family: "FuraCode Nerd Font"
   #  # family: Hack Nerd Font
-    family: JetBrains Mono
-    style: Medium
-  #  family: "FuraCode Nerd Font"
-  #  style: Retina
+    # family: JetBrains Mono
+    # style: Medium
+   family: "FuraCode Nerd Font"
+   style: Regular 
   # normal:
   #     family: "FuraCode Nerd Font"
   #     style: Retina
