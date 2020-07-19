@@ -1,4 +1,6 @@
 call plug#begin('~/.config/nvim/bundle')
+
+if has('nvim')
 	Plug 'scrooloose/nerdtree'
 	Plug 'Xuyuanp/nerdtree-git-plugin'
 	" " Airline
@@ -15,7 +17,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'alvan/vim-closetag'
 	Plug 'sirver/ultisnips'
 
- 	Plug 'dense-analysis/ale'
+	Plug 'dense-analysis/ale'
 
 	Plug 'anyakichi/vim-surround'
 	Plug 'terryma/vim-multiple-cursors'
@@ -26,7 +28,7 @@ call plug#begin('~/.config/nvim/bundle')
 	Plug 'dhruvasagar/vim-table-mode'
 
 	" Commenting
-  Plug 'tpope/vim-commentary'
+	Plug 'tpope/vim-commentary'
 
 	Plug 'norcalli/nvim-colorizer.lua'
 
@@ -46,6 +48,16 @@ call plug#begin('~/.config/nvim/bundle')
 
 	"float"
 	Plug 'voldikss/vim-floaterm'
+
+	" Add some color
+	" Plug 'norcalli/nvim-colorizer.lua'
+	Plug 'junegunn/rainbow_parentheses.vim'
+
+	" note
+	Plug 'jceb/vim-orgmode'
+	Plug 'tpope/vim-speeddating'
+
+	endif
 call plug#end()
 
 	" Commenting

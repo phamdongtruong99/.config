@@ -12,6 +12,9 @@ nmap 'E :qa!<CR>
 nmap 'r :edit!<cr>
 nmap 't :tabclose<cr>
 nmap 'b :b
+
+cmap w!! w !sudo tee > /dev/null %
+
 "hi Comment cterm=italic
 "" Split
 noremap <Leader>\ :<C-u>split<CR>
@@ -50,8 +53,9 @@ noremap YY "+y<CR>
 
 " prev and next buffer
 "\\ Switch between files
-nnoremap <S-tab>b :bp<CR> " Previous buffer file
-nnoremap <S-tab>n :bn<CR> " Next buffer file
+" Tab shortcuts
+nnoremap <leader>p :tabp<CR>
+nnoremap <leader>n :tabn<CR>
 nnoremap <Leader><Leader>c <c-^> " The last two files
 
 
@@ -72,3 +76,4 @@ function! RenameFile()
   endif
 endfunction
 map <Leader>rnf :call RenameFile()<cr>
+

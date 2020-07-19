@@ -35,7 +35,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 echo "zsh installed"
 
-
 echo "Fira Code font!"
 
 brew tap homebrew/cask-fonts
@@ -171,8 +170,5 @@ defaults write com.apple.dock autohide -bool true
 
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
-
-
-
 
 
