@@ -52,6 +52,15 @@ echo "installing a few global npm packages"
 npm install --global serve fkill-cli npm-quick-run \
 semantic-release-cli npm-check-updates
 
+
+echo "setup_envinroment react native"
+brew install node
+brew install watchman
+
+echo "Java Development Kit"
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+
+
 echo "installing apps with brew cask"
 
 brew cask install brave-browser \

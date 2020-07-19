@@ -30,9 +30,19 @@ call plug#begin('~/.config/nvim/bundle')
 
 	Plug 'norcalli/nvim-colorizer.lua'
 
+	"git"
+	"gv = git browers
 	Plug 'tpope/vim-fugitive'
+	Plug 'junegunn/gv.vim'
+	
+	"git quicly go scope"
+	"
+	Plug 'unblevable/quick-scope'
+
 	" react js
 	Plug 'maxmellon/vim-jsx-pretty'
+	Plug 'ivo-donchev/goto-definition-plugin-for-react'
+
 
 	"float"
 	Plug 'voldikss/vim-floaterm'
@@ -53,3 +63,10 @@ let g:ale_sign_error = '●' " Less aggressive than the default '>>'
 let g:ale_sign_warning = '.'
 let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
 "
+"
+
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
